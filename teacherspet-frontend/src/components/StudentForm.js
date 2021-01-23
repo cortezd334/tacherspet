@@ -32,7 +32,7 @@ class StudentForm extends Component {
     render() {
         return (
             <form onSubmit={(event) => this.handleSubmit(event)}>
-                <label>Name</label>
+                <label className="test-font" >Name</label>
                 <input type="text" onChange={(event) => this.handleChange(event)} value={this.state.front} name="name"/><br/>
                 <label>School</label>
                 <input type="text" onChange={(event) => this.handleChange(event)} value={this.state.back} name="school"/><br/>

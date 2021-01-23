@@ -26,8 +26,8 @@ class Card extends Component {
                 <Cards style={{ width: '18rem' }}>
                     <Cards.Body>
                     <Cards.Text>{text}</Cards.Text>
-                    <Button onClick={this.handleClick} variant="primary">Flip</Button>
-                    <Button onClick={() => this.props.removeCard(this.props.card)} variant="primary">Remove</Button>
+                    <Button className="card-buttons" onClick={this.handleClick} variant="primary">Flip</Button>
+                    <Button className="card-buttons" onClick={() => this.props.removeCard(this.props.card)} variant="primary">Remove</Button>
                     </Cards.Body>
                 </Cards>
             </>
