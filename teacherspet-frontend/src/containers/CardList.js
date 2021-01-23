@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import Card from '../components/Card'
 import { fetchCards } from '../actions/index'
+import CardColumns from 'react-bootstrap/CardColumns'
 
 class CardList extends Component {
     componentDidMount = () => {
@@ -12,9 +13,10 @@ class CardList extends Component {
 
     render() {
         return (
-            <ul>
-                {this.props.cards.map(card => <li><Card card={card} /></li>)}
-            </ul>
+            <CardColumns>
+                {this.props.cards.map(card => <Card card={card} />)}
+            </CardColumns>
+
         );
     }
 }
