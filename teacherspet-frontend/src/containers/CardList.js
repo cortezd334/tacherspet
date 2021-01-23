@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import Card from '../components/Card'
+import { fetchCards } from '../actions/index'
 
 class CardList extends Component {
+    componentDidMount = () => {
+        if (this.props.cards.length === 0) {
+            this.props.fetchCards()
+        }
+    }
+
     render() {
         return (
             <ul>
@@ -18,4 +25,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(CardList);
+export default connect(mapStateToProps, { fetchCards })(CardList);
