@@ -18,3 +18,10 @@ export const submitCardForm = (formData) => {
         payload: formData
     }
 }
+
+export const addStudent = (formData) => {
+    return {
+        type: "ADD_STUDENT",
+        payload: formData
+    }
+}

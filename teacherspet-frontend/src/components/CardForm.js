@@ -30,8 +30,10 @@ class CardForm extends Component {
     render() {
         return (
             <form onSubmit={(event) => this.handleSubmit(event)}>
-                <input type="text" onChange={(event) => this.handleChange(event)} value={this.state.front} name="front"/>
-                <input type="text" onChange={(event) => this.handleChange(event)} value={this.state.back} name="back"/>
+                <label>Card Front</label>
+                <input type="text" onChange={(event) => this.handleChange(event)} value={this.state.front} name="front"/><br/>
+                <label>Card Back</label>
+                <input type="text" onChange={(event) => this.handleChange(event)} value={this.state.back} name="back"/><br/>
                 <input type="submit"/>
             </form>
         );
