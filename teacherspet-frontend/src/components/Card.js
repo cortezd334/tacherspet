@@ -23,7 +23,7 @@ class Card extends Component {
 
         return (
             <>
-                <Cards style={{ width: '18rem' }}>
+                <Cards style={{ width: '18rem'}}>
                     <Cards.Body>
                     <Cards.Text>{text}</Cards.Text>
                     <Button className="card-buttons" onClick={this.handleClick} variant="primary">Flip</Button>

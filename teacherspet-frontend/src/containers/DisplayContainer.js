@@ -10,11 +10,13 @@ class DisplayContainer extends Component {
         return (
             <Container fluid>
                 <Row>
-                    <Col><h2>This is the Display Page</h2></Col>
+                    <Col><h2>Display Page</h2></Col>
+                </Row>
+                <Row>
+                    <Col><TimerContainer /></Col>
                 </Row>
                 <Row>
                     <Col><CardList /></Col>
-                    <Col><TimerContainer /></Col>
                 </Row>
             </Container>
         );
