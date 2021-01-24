@@ -9,6 +9,10 @@ const TimerContainer = () => {
     }
     const[time, setTime] = useState(timeForm)
     const[start, setStart] = useState(0)
+    const [remainder, setRemainder] = useState(0)
+    const [after, setAfter] = useState(0)
+    const [play, setPlay] = useState(false)
+    const [display, setDislay] = useState(false)
 
     useEffect(() => {
         setStart(+(time.min * 60) + +(time.sec))
@@ -19,16 +23,53 @@ const TimerContainer = () => {
         setTime(prevState => ({...prevState, ...obj}))
     }
 
+    let inter
+
+    const handleClick = () => {
+
+        setRemainder(start)
+        setPlay(true)
+        setDislay(true)
+        
+        if(after > 0) {
+            inter = setInterval(() => {
+                setAfter(after => after - 1);
+            }, 1000);
+            // return () => clearInterval(inter);
+        } else {
+            inter = setInterval(() => {
+                setRemainder(remainder => remainder - 1);
+            }, 1000);
+            // return () => clearInterval(inter);
+        }
+    }
+
+    const clickHandler = () => {
+        setAfter(remainder)
+        setPlay(false)
+    }
+
     return (
         <>
         <div className='iGroup'>
             <h2 id='boxTitle'>Time</h2>
             <input className='input' type='number' placeholder='minutes' name='min' onChange={change} required/>
             <input className='input' type='number' placeholder='seconds' name='sec' onChange={change} required/>
+            {play ?
+                <button className='tBtn' onClick={clickHandler}>Pause</button>
+                :
+                <button className='tBtn' onClick={handleClick}>Start</button>
+            }
         </div>
-            <Timer start={start}/>
+        {display ?
+        <Timer start={start} remainder={remainder} after={after}/>
+        :
+        null
+        }
         </>
     );
 }
 
 export default TimerContainer;
+
+//need a catch - after === 0 button goes back to start && Timer disappears (display(false))
