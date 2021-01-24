@@ -236,12 +236,38 @@ code {
   box-shadow: 0px 0px 10px 4px rgba(13, 13, 13, 0.1);
 }
 
+#timer {
+  height: 28px;
+  width: 28px;
+  left: 10px;
+  top: 12px;
+  /* position: absolute;
+  left: 20.83%;
+  right: 20.83%;
+  top: 25%;
+  bottom: 16.67%; */
+}
 #boxTitle {
   padding: 2rem;
+  /* position: absolute;
+  left: 10.49%;
+  right: 82.71%;
+  top: 20.21%;
+  bottom: 76.66%; */
 }
 
 .iGroup {
-  padding: 2rem .1rem;
+  padding: 2rem;
+  width: 100%;
+  border: black;
+  border-style: double;
+  background-color: #FFFAF5;
+  box-shadow: 0px 0px 10px 4px rgba(13, 13, 13, 0.1);
+  /* position: absolute;
+  left: 3.89%;
+  right: 73.89%;
+  top: 16.41%;
+  bottom: 53.12%; */
 }
 
 .input {
@@ -254,12 +280,17 @@ code {
 }
 
 .tBtn {
-  margin: 2px;
+  margin: 20px;
   background-color: #C22F08;
   box-shadow: 0px 4px 10px rgba(13, 13, 13, 0.1);
   border-radius: 100px;
   width: 208px;
   height: 48px;
+  /* position: absolute;
+  left: 7.22%;
+  right: 78.33%;
+  top: 35.74%;
+  bottom: 59.57%; */
 }
 
 /* progress bar */
@@ -270,12 +301,24 @@ code {
   width: 300px;
   height: 30px;
   align-self: center;
-}
+  margin: 30px;
+  /* position: absolute;
+  left: 3.89%;
+  right: 73.89%;
+  top: 51.37%;
+  bottom: 42.38%; */
+  }
 
 .bar {
   background-color: #5BC0EB;
-  height: 29px;
-  border-radius: 1rem;
+  height: 64px;
+  width: 241px;
+  border-radius: 100px;
+  /* position: absolute;
+  left: 3.89%;
+  right: 73.89%;
+  top: 51.37%;
+  bottom: 42.38%; */
 }
 
 /* color for pause/stop button background: #C22F08;*/
