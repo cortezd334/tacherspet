@@ -43,8 +43,16 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/cortez
 The application is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
 ## Team Members
-Julie Saephan
-Danira Cortez
-Ellen Park
-Adi Valencia
-Ahraanei Krish
+
+### Julie Saephan 
+[Personal Website](https://juliesaephan.com/) 
+
+### Danira Cortez
+[Personal Website](https://daniracortez.com/) | [GitHub](https://github.com/cortezd334) | [LinkedIn](https://www.linkedin.com/in/daniracortez/)
+
+### Ellen Park
+[Personal Website](https://ellenupark.github.io) | [LinkedIn](http://www.linkedin.com/in/ellenupark) | [Blog](https://ellen-park.medium.com/)
+
+### Adi Valencia
+[Personal Website](https://twitter.com/akivalencia) | [Twitter](https://twitter.com/akivalencia)
+
