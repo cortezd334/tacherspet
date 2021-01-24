@@ -3,30 +3,51 @@ import React, { useState } from 'react';
 const Timer = ({ start }) => {
 
     const [remainder, setRemainder] = useState(0)
+    const [after, setAfter] = useState(0)
        
+    let prog = (remainder/start) * 300
+    let newProg = (after/start) * 300
+    let time
+
     const handleClick = () => {
 
         setRemainder(start)
 
-        setInterval(() => {
-            setRemainder(remainder => remainder - 1);
-        }, 1000)
+        if(after > 0) {
+            time = setInterval(() => {
+                    setAfter(after => after - 1);
+                }, 1000);
+                return () => clearInterval(time);
+        } else {
+            time = setInterval(() => {
+                    setRemainder(remainder => remainder - 1);
+                }, 1000);
+                return () => clearInterval(time);
+        }
     }
 
-    const progress = () => {
-        let prog = (remainder/start) * 300
-        console.log(prog)
-        return (
-            <div className='progress'>
-                <div style={{width: `${prog}px`}} className='bar'></div>
-            </div>
-        )
+    const clickHandler = () => {
+        setAfter(remainder)
     }
 
     return (
         <>
-            <button onClick={handleClick}>Start</button>
-            {progress()}
+        <button onClick={handleClick}>Start</button>
+        <button onClick={clickHandler}>Pause</button>
+            {/* {pause ?
+                <button onClick={handleClick}>Start</button>
+                :
+                <button onClick={clickHandler}>Pause</button>
+            } */}
+            { after > 0 ?
+            (<div className='progress'>
+                <div style={{width: `${newProg}px`}} className='bar'></div>
+            </div>)
+            :
+            (<div className='progress'>
+                <div style={{width: `${prog}px`}} className='bar'></div>
+            </div>)
+            }
         </>
     );
 }

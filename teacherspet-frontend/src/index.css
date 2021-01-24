@@ -217,12 +217,17 @@ code {
   background-color: rgb(233, 233, 233);
   border-radius: .5rem;
   width: 300px;
+  height: 30px;
   align-self: center;
 }
 
 .bar {
-  background-color: red;
-  height: 15px;
+  background-color: #5BC0EB;
+  ;
+  height: 29px;
   border-radius: 1rem;
 }
+
+/* color for pause/stop button background: #C22F08;
+ */
 /* end of progress bar */
