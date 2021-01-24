@@ -26,7 +26,7 @@ class Card extends Component {
                 <Cards onClick={this.handleClick} >
                     <Cards.Body>
                     <Cards.Text>{text}</Cards.Text>
-                    <Button className="card-buttons" onClick={() => this.props.removeCard(this.props.card)} variant="primary">Remove</Button>
+                    {/* <Button className="card-buttons" onClick={() => this.props.removeCard(this.props.card)} variant="primary">Remove</Button> */}
                     </Cards.Body>
                 </Cards>
             </>
