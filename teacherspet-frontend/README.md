@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# Teacher's Pet
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img src="https://i.ibb.co/PMnCLP9/Screen-Shot-2021-01-24-at-6-12-47-PM.png" width="400">
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+Going virtual hasn't been easy for teachers and students since the pandemic hit. Although we have become more familiar with classes on Zoom, teachers are having a difficult time customizing their lessons to cater to their students. We created a fully customizable flashcard creation and display too. With this tool, teachers can easily create flashcards and use them for virtual activities to engage with students.
 
-### `yarn start`
+## What it does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Teacher's Pet gives teachers the power to create customized flashcard activities and a fun way to interact with their students through flashcard activities. The website stores lessons (decks of cards), information on the cards, and student information. It also allows teachers to display their cards in a grid style or single card to present to students. The presentation features the queue of students and a timer. Teachers can decide to show or hide either of the features to give their students the best experience.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## How we built it
 
-### `yarn test`
+We designed the prototype for Teacher’s Pet using Figma. We built the front-end using React/Redux and built the back-end using Ruby on Rails. We created and displayed data through Microsoft Azure mySQL database.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Install
 
-### `yarn build`
+### Clone Repository
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```shell
+git clone git@github.com:cortezd334/teacherspet.git
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Begin Server
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+While in the Backend root directory,
 
-### `yarn eject`
+```shell
+rails s
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Open Application
+Navigate to the Frontend root directory,
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contributing
+Bug reports and pull requests are welcome on GitHub at https://github.com/cortezd334/teacherspet. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## License
 
-## Learn More
+The application is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Team Members
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Julie Saephan 
+[Personal Website](https://juliesaephan.com/) 
 
-### Code Splitting
+### Danira Cortez
+[Personal Website](https://daniracortez.com/) | [GitHub](https://github.com/cortezd334) | [LinkedIn](https://www.linkedin.com/in/daniracortez/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Ellen Park
+[Personal Website](https://ellenupark.github.io) | [LinkedIn](http://www.linkedin.com/in/ellenupark) | [Blog](https://ellen-park.medium.com/)
 
-### Analyzing the Bundle Size
+### Adi Valencia
+[Twitter](https://twitter.com/akivalencia)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Ahraanei Krish
