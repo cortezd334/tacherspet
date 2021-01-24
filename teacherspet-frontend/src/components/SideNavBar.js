@@ -6,11 +6,44 @@ import settings from '../images/settings.png'
 
 
 class SideNavBar extends Component {
+    renderLessonButtonColor = () => {
+        let buttonColor;
+        const url = this.props.location.pathname
+        if (url === '/lessons' || url === '/lessons/new') {
+            buttonColor = 'active-button'
+        } else {
+            buttonColor = ''
+        }
+        return buttonColor;
+    }
+
+    renderStudentButtonColor = () => {
+        let buttonColor;
+        const url = this.props.location.pathname
+        if (url === '/students' || url === '/students/new') {
+            buttonColor = 'active-button'
+        } else {
+            buttonColor = ''
+        }
+        return buttonColor;
+    }
+
+    renderSettingsButtonColor = () => {
+        let buttonColor;
+        const url = this.props.location.pathname
+        if (url === '/settings') {
+            buttonColor = 'active-button'
+        } else {
+            buttonColor = ''
+        }
+        return buttonColor;
+    }
+
     render() {
         return (
-            <div className="side-nav-bar">
+            <div className="side-nav-bar background-style">
                 <Link to={"/lessons"} style={{textDecoration: 'none'}}>
-                    <button className="icon-lesson">
+                    <button className={`icon-lesson ${this.renderLessonButtonColor()}`}>
                         <img
                             src={activeLesson}
                             width="35"
@@ -21,7 +54,7 @@ class SideNavBar extends Component {
                         <span>Lessons</span>
                     </button></Link>
                 <Link to={"/students"} style={{textDecoration: 'none'}}>
-                    <button className="icon-student">
+                    <button className={`icon-student ${this.renderStudentButtonColor()}`}>
                         <img
                             src={inactiveStudent}
                             width="35"
@@ -32,8 +65,8 @@ class SideNavBar extends Component {
                         <span>Students</span>
                     </button>
                 </Link>
-                <Link to={'/display'} style={{textDecoration: 'none'}}>
-                <button className="icon-settings">
+                <Link to={'/settings'} style={{textDecoration: 'none'}}>
+                <button className={`icon-settings ${this.renderSettingsButtonColor()}`}>
                     <img
                         src={settings}
                         width="35"
