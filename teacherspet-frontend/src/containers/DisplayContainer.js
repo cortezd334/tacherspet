@@ -16,7 +16,7 @@ class DisplayContainer extends Component {
                     <Col><TimerContainer /></Col>
                 </Row>
                 <Row>
-                    <Col><CardList /></Col>
+                    <Col md={{ span: 5, offset: 2 }}><CardList /></Col>
                 </Row>
             </Container>
         );
