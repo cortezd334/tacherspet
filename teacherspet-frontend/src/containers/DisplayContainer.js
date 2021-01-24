@@ -33,10 +33,10 @@ class DisplayContainer extends Component {
                     </Modal>
                 </Row>
                 <Row>
-                    <Col className='timer'><TimerContainer /></Col>
-                </Row>
-                <Row>
-                    <Col><CardList /></Col>
+                    <Col xs={3} className='timer'>
+                        <TimerContainer />
+                    </Col>
+                    <CardList />
                 </Row>
             </Container>
         );
