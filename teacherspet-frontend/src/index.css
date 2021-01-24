@@ -24,7 +24,7 @@ code {
 /* Card Display */
 
 .card {
-  width: 150px !important;
+  width: 200px !important;
   height: 150px !important;
   margin: 8px;
   box-shadow: 0px 0px 10px 4px rgba(13, 13, 13, 0.1);
@@ -33,12 +33,18 @@ code {
 
 .card-columns {
   max-width: 800px;
-  column-count: 5;
+  column-count: 3;
   
 }
 
 .card-buttons {
   margin: 5px;
+  width: 116px;
+  height: 28px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 100px;
+  background-color: #F1F1F1;
 }
 
 
@@ -361,3 +367,42 @@ code {
 }
 
 
+/* Lessons */
+
+.lesson-summary-container {
+  margin-left: 220px;
+  display: flex;
+}
+
+.lesson-summary-card {
+  display: inline-block;
+  background-color: #F1F1F1;
+  padding-top: 10px;
+}
+
+.lesson-summary-card button {
+  font-size: small;
+
+}
+
+.lesson-card p {
+  text-align: left;
+  padding-left: 15px;
+}
+
+.create-new-lesson-button {
+  width: 208px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #0C90B9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 10px rgba(13, 13, 13, 0.1);
+  border-radius: 100px;
+  color: #0C90B9;
+}
+
+.lesson-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}

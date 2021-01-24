@@ -4,21 +4,18 @@ import LessonSummary from '../components/LessonSummary';
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import CardColumns from 'react-bootstrap/CardColumns'
 import { Link } from 'react-router-dom';
 
 class LessonsContainer extends Component {
     render() {
         return (
-            <Container fluid>
-                <Row>
+            <Container className='background-style' fluid>
+                <Row className="lesson-header">
                     <Col><h2>Lessons</h2></Col>
-                    <Col><Link to={"/lessons/new"} style={{textDecoration: 'none'}}><button>Create a new lesson</button></Link></Col>
+                    <Col><Link to={"/lessons/new"} style={{textDecoration: 'none'}}><button className="create-new-lesson-button">Create a new lesson</button></Link></Col>
                 </Row>
                 <Row>
-                    <Col md={{ span: 5, offset: 2 }}>
-                        <CardColumns>{this.props.lessons.map(lesson => <LessonSummary lesson={lesson} />)}</CardColumns>
-                    </Col>
+                    <Col className="lesson-summary-container" md={{ span: 8, offset: 2 }}>{this.props.lessons.map(lesson => <LessonSummary lesson={lesson} />)}</Col>
                 </Row>
             </Container>
         );
