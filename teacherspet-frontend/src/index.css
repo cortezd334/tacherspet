@@ -23,6 +23,8 @@ code {
   height: 80vh;
 }
 
+/* Nav Bar */
+
 .nav-item .signup {
   background-color: lightgrey;
   margin: 5px;
@@ -38,6 +40,44 @@ code {
   width: 128px;
   height: 48px;
   color: #000000;
+}
+
+/* Side Nav Bar */
+
+.side-nav-bar {
+  position: absolute;
+  width: 152px;
+  height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: #EEEEEE;
+  z-index: 35;
+}
+
+.side-nav-bar .icon-lesson {
+  position: absolute;
+  width: 105.01px;
+  height: 106px;
+  left: 24px;
+  top: 161px;
+  background: #C4C4C4;
+  border-radius: 100%;
+  border: 0px;
+}
+
+.side-nav-bar .icon-student {
+  position: absolute;
+  width: 105.01px;
+  height: 106px;
+  left: 24px;
+  top: 300px;
+  background: #C4C4C4;
+  border-radius: 100%;
+  border: 0px;
+}
+
+.side-nav-bar .icon-lesson:hover, .icon-student:hover {
+  background: #adadad;
 }
 
 /* Home Page */
