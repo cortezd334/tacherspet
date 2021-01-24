@@ -2,7 +2,7 @@
 export default (state = [], action) => {
     switch (action.type) {
         case 'FETCH_CARDS':
-            return action.payload
+            return [...action.payload]
         case  'CREATE_CARD':
             return [...state, action.payload]
         case 'REMOVE_CARD':
