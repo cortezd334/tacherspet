@@ -210,3 +210,19 @@ code {
   height: 224px;
   margin: 60px auto 30px auto;
 }
+
+/* progress bar */
+.progress {
+  display: inline-block;
+  background-color: rgb(233, 233, 233);
+  border-radius: .5rem;
+  width: 300px;
+  align-self: center;
+}
+
+.bar {
+  background-color: red;
+  height: 15px;
+  border-radius: 1rem;
+}
+/* end of progress bar */

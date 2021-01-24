@@ -1,61 +1,41 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import Timer from '../components/Timer';
 
-class TimerContainer extends Component {
+const TimerContainer = () => {
+    
+    const[min, setMin] = useState(0)
+    const[sec, setSec] = useState(0)
+    const[start, setStart] = useState(0)
 
-    state = {
-        seconds: 0,
-        minutes: 0
+        
+    const handleChange = (e) => {
+        setMin(e.target.value)
+        beg()
     }
 
-    
-    render() {
+    const changeHandler = (e) => {
+        setSec(e.target.value)
+        beg()
+    }
 
-        const handleChange = (e) => {
-            this.setState({
-                minutes: e.target.value
-            })
-        }
+    const beg = () => {
+        setStart(+(min * 60) + +(sec))
+    }
 
-        const changeHandler = (e) => {
-            this.setState({
-                seconds: e.target.value
-            })
-        }
 
-        const handleSubmit = (e) => {
-            e.preventDefault()
+    const pauseTimer = () => {
+        //figure out how to pause interval
+    }
 
-            setInterval(() => {
-                const { seconds, minutes } = this.state
-        
-                if (seconds > 0) {
-                    this.setState(({ seconds }) => ({
-                        seconds: seconds - 1
-                    }))
-                }
-                if (seconds === 0) {
-                    if (minutes === 0) {
-                        clearInterval(this.myInterval)
-                    } else {
-                        this.setState(({ minutes }) => ({
-                            minutes: minutes - 1,
-                            seconds: 59
-                        }))
-                    }
-                }
-            }, 1000)
-        }
+
         return (
             <>
-                <h2>This is the Timer</h2>
-                <input type='number' placeholder='minutes' minutes={this.state.minutes} onChange={handleChange} required/>
-                <input type='number' placeholder='seconds' seconds={this.state.seconds} onChange={changeHandler} required/>
-                <button onClick={handleSubmit}>Start</button>
-                <Timer seconds={this.state.seconds} minutes={this.state.minutes}/>
+                <h2>Time</h2>
+                <input type='number' placeholder='minutes'  onChange={handleChange} required/>
+                <input type='number' placeholder='seconds'  onChange={changeHandler} required/>
+                <Timer start={start}/>
             </>
         );
-    }
 }
 
 export default TimerContainer;
