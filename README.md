@@ -1,6 +1,6 @@
-# Teacher's Pet
+# README
 
-![Teacher's Pet Homepage](https://i.ibb.co/PMnCLP9/Screen-Shot-2021-01-24-at-6-12-47-PM.png | width=200)
+![Teacher's Pet Homepage](https://i.ibb.co/PMnCLP9/Screen-Shot-2021-01-24-at-6-12-47-PM.png)
 
 ## Description
 
