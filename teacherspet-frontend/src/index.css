@@ -21,17 +21,26 @@ code {
   background: #D6D6D6;
 }
 
+/* Card Display */
+
+.card {
+  width: 150px !important;
+  height: 150px !important;
+  margin: 8px;
+  box-shadow: 0px 0px 10px 4px rgba(13, 13, 13, 0.1);
+  border-radius: 8px;
+}
+
+.card-columns {
+  max-width: 800px;
+  column-count: 5;
+  
+}
+
 .card-buttons {
   margin: 5px;
 }
 
-.card-body {
-  height: 25%;
-}
-
-.card-columns {
-  height: 80vh;
-}
 
 .card-submit {
   margin-top: 50px;
@@ -221,6 +230,10 @@ code {
   width: 20%;
   padding: .5rem;
   margin: 5rem;
+  border: black;
+  border-style: double;
+  background-color: #FFFAF5;
+  box-shadow: 0px 0px 10px 4px rgba(13, 13, 13, 0.1);
 }
 
 #timer {
@@ -284,9 +297,9 @@ code {
 .progress {
   display: inline-block;
   background-color: rgb(233, 233, 233);
-  border-radius: 100px;
-  width: 320px;
-  height: 64px;
+  border-radius: .5rem;
+  width: 300px;
+  height: 30px;
   align-self: center;
   margin: 30px;
   /* position: absolute;
@@ -346,3 +359,5 @@ code {
   border-radius: 100px;
   border: 0px;
 }
+
+
