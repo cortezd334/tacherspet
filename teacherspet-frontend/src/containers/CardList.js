@@ -23,7 +23,7 @@ class CardList extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        cards: state.cards.filter(card => card.lesson === ownProps.lesson.split('/present/')[1])
+        cards: state.cards.filter(card => card.lesson === ownProps.lesson.split('/present/')[1] || card.lesson.name === ownProps.lesson.split('/present/')[1])
     }
 }
 
