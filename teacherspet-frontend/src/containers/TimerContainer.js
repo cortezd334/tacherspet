@@ -24,10 +24,6 @@ const TimerContainer = () => {
 
     //only taking the first number of sec eg. 50 would be 5
 
-    const pauseTimer = () => {
-        //figure out how to pause interval
-    }
-
 
         return (
             <>
