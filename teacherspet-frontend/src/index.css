@@ -11,6 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.grey-background {
+  background: #D6D6D6;
+}
+
 .card-buttons {
   margin: 5px;
 }
@@ -23,23 +29,33 @@ code {
   height: 80vh;
 }
 
+.card-submit {
+  margin-top: 50px;
+  width: 208px;
+  height: 48px;
+  border-radius: 100px;
+  background: #C4C4C4;
+  border: 0px;
+}
+
 /* Nav Bar */
 
-.nav-item .signup {
+.signup {
   background-color: lightgrey;
   margin: 5px;
   border-radius: 100px;
-  width: 128px;
-  height: 48px;
+  color: #000000;
+  width: 120px;
+}
+
+.login {
+  margin: 5px;
+  border-radius: 100px;
   color: #000000;
 }
 
-.nav-item .login {
-  margin: 5px;
-  border-radius: 100px;
-  width: 128px;
-  height: 48px;
-  color: #000000;
+.nav-title {
+  font-weight: bold;
 }
 
 /* Side Nav Bar */
@@ -60,7 +76,7 @@ code {
   height: 106px;
   left: 24px;
   top: 161px;
-  background: #C4C4C4;
+  /* background: #C4C4C4; */
   border-radius: 100%;
   border: 0px;
 }
@@ -71,13 +87,26 @@ code {
   height: 106px;
   left: 24px;
   top: 300px;
-  background: #C4C4C4;
-  border-radius: 100%;
   border: 0px;
+  border-radius: 100%;
 }
 
-.side-nav-bar .icon-lesson:hover, .icon-student:hover {
-  background: #adadad;
+.side-nav-bar .icon-settings {
+  position: absolute;
+  width: 105.01px;
+  height: 106px;
+  left: 24px;
+  bottom: 20px;
+  border: 0px;
+  border-radius: 100%;
+}
+
+.side-nav-bar .icon-lesson:hover, .icon-student:hover, .icon-settings:hover {
+  background: #dddddd;
+}
+
+.side-nav-bar span {
+  font-weight: bold;
 }
 
 /* Home Page */
@@ -112,4 +141,50 @@ code {
   height: 395px;
   background-color: lightgrey;
   border: 2px solid grey;
+}
+
+/* New Lessons */
+
+.add-cards {
+  width: 200px;
+  height: 150px;
+  background: #C4C4C4;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-cards p {
+  font-size: 65px;
+  font-weight: bold;
+} 
+
+.save-lesson {
+  position: absolute;
+  width: 150px;
+  height: 40px;
+  right: 40px;
+  bottom: 40px;
+  border: 0px;
+  border-radius: 100px;
+}
+
+.save-lesson:hover, .add-cards:hover {
+  background: #dddddd;
+}
+
+.popup {
+  z-index: 50;
+  border: 1px solid red;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+
+.grey-box {
+  width: 320px;
+  height: 224px;
+  margin: 60px auto 30px auto;
 }
