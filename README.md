@@ -56,3 +56,4 @@ The application is available as open source under the terms of the [MIT License]
 ### Adi Valencia
 [Personal Website](https://twitter.com/akivalencia) | [Twitter](https://twitter.com/akivalencia)
 
+### Ahraanei Krish
