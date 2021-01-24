@@ -21,9 +21,9 @@ class CardList extends Component {
     }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state, ownProps) => {
     return {
-        cards: state.cards
+        cards: state.cards.filter(card => card.lesson === ownProps.lesson.split('/present/')[1])
     }
 }
 

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Cards from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
 import { removeCard } from '../actions/index'
 import { connect } from 'react-redux'
 
