@@ -211,6 +211,48 @@ code {
   margin: 60px auto 30px auto;
 }
 
+/* Display Page */
+
+.dis {
+  display: flex;
+}
+
+.timer {
+  width: 20%;
+  padding: .5rem;
+  margin: 5rem;
+  border: black;
+  border-style: double;
+  background-color: #FFFAF5;
+  box-shadow: 0px 0px 10px 4px rgba(13, 13, 13, 0.1);
+}
+
+#boxTitle {
+  padding: 2rem;
+}
+
+.iGroup {
+  padding: 2rem .1rem;
+}
+
+.input {
+  width: 33%;
+  height: 40px;
+  margin: 2px;
+  border: 1px solid #0D0D0D;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.tBtn {
+  margin: 2px;
+  background-color: #C22F08;
+  box-shadow: 0px 4px 10px rgba(13, 13, 13, 0.1);
+  border-radius: 100px;
+  width: 208px;
+  height: 48px;
+}
+
 /* progress bar */
 .progress {
   display: inline-block;

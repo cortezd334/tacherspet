@@ -21,9 +21,11 @@ const TimerContainer = () => {
 
     return (
         <>
-            <h2>Time</h2>
-            <input type='number' placeholder='minutes' name='min' onChange={change} required/>
-            <input type='number' placeholder='seconds' name='sec' onChange={change} required/>
+        <div className='iGroup'>
+            <h2 id='boxTitle'>Time</h2>
+            <input className='input' type='number' placeholder='minutes' name='min' onChange={change} required/>
+            <input className='input' type='number' placeholder='seconds' name='sec' onChange={change} required/>
+        </div>
             <Timer start={start}/>
         </>
     );

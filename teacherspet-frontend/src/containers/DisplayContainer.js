@@ -20,9 +20,9 @@ class DisplayContainer extends Component {
 
     render() {
         return (
-            <Container fluid>
+            <Container className='dis' fluid>
                 <Row>
-                    <Col><h2>Display Page</h2></Col>
+                    {/* <Col><h2>Display Page</h2></Col> */}
                     <Modal show={this.state.setShow} animation={false}>
                         <Modal.Body>Ready to Play?</Modal.Body>
                         <Modal.Footer>
@@ -33,7 +33,7 @@ class DisplayContainer extends Component {
                     </Modal>
                 </Row>
                 <Row>
-                    <Col><TimerContainer /></Col>
+                    <Col className='timer'><TimerContainer /></Col>
                 </Row>
                 <Row>
                     <Col><CardList /></Col>
