@@ -33,14 +33,8 @@ const Timer = ({ start }) => {
         setPlay(false)
     }
 
-    console.log(remainder)
-    console.log('after', after)
-    console.log('play', play)
-
     return (
         <>
-        {/* <button onClick={handleClick}>Start</button>
-        <button onClick={clickHandler}>Pause</button> */}
             {play ?
                 <button onClick={clickHandler}>Pause</button>
                 :
