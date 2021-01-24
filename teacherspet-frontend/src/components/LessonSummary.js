@@ -3,6 +3,10 @@ import Cards from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
 class LessonSummary extends Component {
+    handleClick = () => {
+
+    }
+    
     render() {
         return (
             <Cards>
