@@ -14,3 +14,62 @@ code {
 .card-buttons {
   margin: 5px;
 }
+
+.card-body {
+  height: 25%;
+}
+
+.card-columns {
+  height: 80vh;
+}
+
+.nav-item .signup {
+  background-color: lightgrey;
+  margin: 5px;
+  border-radius: 100px;
+  width: 128px;
+  height: 48px;
+  color: #000000;
+}
+
+.nav-item .login {
+  margin: 5px;
+  border-radius: 100px;
+  width: 128px;
+  height: 48px;
+  color: #000000;
+}
+
+/* Home Page */
+
+.home-page {
+  display: block;
+  max-width: 656px;
+  height: 224px;
+}
+
+.home-page p {
+  margin: 90px 0px 0px 65px;
+  text-align: left;
+  font-size: 64px;
+  line-height: 75px;
+}
+
+.home-page button {
+  position: absolute;
+  width: 208px;
+  height: 48px;
+  left: 80px;
+  top: 345px;
+  background: #C4C4C4;
+  border-radius: 100px;
+  border: 0px !important;
+}
+
+.grey-box {
+  display: block;
+  margin: 50px 65px 0px 0px;
+  height: 395px;
+  background-color: lightgrey;
+  border: 2px solid grey;
+}
