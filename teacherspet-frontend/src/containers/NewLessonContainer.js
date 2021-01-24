@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import CardForm from '../components/CardForm'
+import { connect } from 'react-redux'
+import Card from '../components/Card'
 
 class NewLessonContainer extends Component {
     constructor(props) {
@@ -46,18 +48,20 @@ class NewLessonContainer extends Component {
                             <div className="add-cards" onClick={this.toggle}>
                                 <p>+</p>
                             </div>
+                            {this.props.cards.filter(card => card.lesson === this.state.name).map(card => <Card card={card} />)}
                         </Col>
                         <Col>
                             <div className="popup">
                                 <div className="grey-box">
                                 </div>
-                                <CardForm />
+                                <CardForm lesson={this.state.name}/>
                             </div>
                         </Col>
                     </Row>
                 </Container>
             );
         }
+
         return (
             <Container fluid>
                 <Row>
@@ -73,6 +77,7 @@ class NewLessonContainer extends Component {
                         <div className="add-cards" onClick={this.toggle}>
                             <p>+</p>
                         </div>
+                        {this.props.cards.filter(card => card.lesson === this.state.name).map(card => <Card card={card} />)}
                     </Col>
                 </Row>
                 <button className="save-lesson">
@@ -83,5 +88,11 @@ class NewLessonContainer extends Component {
     }
 }
 
-export default NewLessonContainer;
+const mapStateToProps = state => {
+    return {
+        cards: state.cards
+    }
+}
+
+export default connect(mapStateToProps)(NewLessonContainer);
 
