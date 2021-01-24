@@ -30,9 +30,11 @@ class NewLessonContainer extends Component {
     }
 
     toggle = () => {
-        this.setState({
-            toggle: !this.state.toggle
-        })
+        if (this.state.name !== "") {
+            this.setState({
+                toggle: !this.state.toggle
+            })
+        }
     }
 
     render() {

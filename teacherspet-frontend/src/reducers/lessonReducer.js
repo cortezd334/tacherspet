@@ -4,7 +4,7 @@ export default (state = ['Math', 'Science', 'Chemistry', 'History', 'Art'], acti
         case 'FETCH_LESSONS':
             return state
         case 'ADD_LESSON':
-            if (state.find(action.payload)) {
+            if (state.find(lesson => lesson === action.payload)) {
                 return [...state]
             }
             return [...state, action.payload]
