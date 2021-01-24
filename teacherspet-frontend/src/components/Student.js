@@ -7,22 +7,27 @@ import edit from '../images/settings.png';
 
 class Student extends Component {
 
+    state = {
+        students: []
+    }
+
     componentDidMount() {
         fetchStudents()
-        .then(json => console.log(json))
+        .then(json => this.setState({students: json}))
     }
+
 
     render() {
 
         const displayStudents = () => {
-            // return fetchStudents.map(student => {
-            //     return <Row>
-            //         <Col><p>{student.name}</p></Col>
-            //         <Col><p>{student.school}</p></Col>
-            //         <Col><p>{student.grade}</p></Col>
-            //         <Col><img src={edit}/></Col>
-            //     </Row>
-            // })
+            return this.state.students.map(student => {
+                return <Row key={student.id}>
+                    <Col><p>{student.name}</p></Col>
+                    <Col><p>{student.school}</p></Col>
+                    <Col><p>{student.grade}</p></Col>
+                    <Col><img id='stuEdit' src={edit}/></Col>
+                </Row>
+            })
         }
 
         return (
