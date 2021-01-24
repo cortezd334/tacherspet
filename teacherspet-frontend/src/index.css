@@ -406,3 +406,10 @@ code {
   padding-bottom: 20px;
 
 }
+
+/* Students */
+
+#stuEdit {
+  height: 15px;
+  width: 15px;
+}
