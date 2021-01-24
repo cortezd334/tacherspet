@@ -6,12 +6,9 @@ export const removeCard = (card) => {
 }
 
 export const fetchCards = () => {
-    return(dispatch) => {
-        return fetch('http://localhost:3000/cards')
-        .then(resp => resp.json())
-        .then(cards => {
-            dispatch({ type: "FETCH_CARDS", payload: cards })
-        })
+    return {
+        type: "FETCH_CARDS",
+        payload: [{front: "1 + 1", back: "2", lesson: 'Math'}, {front: "Science Front", back: "Science Back", lesson: 'Science'}, {front: "History Front", back: "History Back", lesson: 'History'}, {front: "2 + 2", back: "4", lesson: 'Math'}, {front: "Science Front", back: "Science Back", lesson: 'Science'}, {front: "History Front", back: "History Back", lesson: 'History'}, {front: "Science Front", back: "Science Back", lesson: 'Science'}, {front: "3 + 3", back: "6", lesson: 'Math'}, {front: "History Front", back: "History Back", lesson: 'History'}]
     }
 }
 
