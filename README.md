@@ -54,6 +54,6 @@ The application is available as open source under the terms of the [MIT License]
 [Personal Website](https://ellenupark.github.io) | [LinkedIn](http://www.linkedin.com/in/ellenupark) | [Blog](https://ellen-park.medium.com/)
 
 ### Adi Valencia
-[Personal Website](https://twitter.com/akivalencia) | [Twitter](https://twitter.com/akivalencia)
+[Twitter](https://twitter.com/akivalencia)
 
 ### Ahraanei Krish
