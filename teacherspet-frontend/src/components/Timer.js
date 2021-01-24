@@ -36,9 +36,9 @@ const Timer = ({ start }) => {
     return (
         <>
             {play ?
-                <button onClick={clickHandler}>Pause</button>
+                <button className='tBtn' onClick={clickHandler}>Pause</button>
                 :
-                <button onClick={handleClick}>Start</button>
+                <button className='tBtn' onClick={handleClick}>Start</button>
             }
             { after > 0 ?
             (<div className='progress'>
