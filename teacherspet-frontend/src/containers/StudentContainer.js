@@ -11,7 +11,7 @@ class StudentContainer extends Component {
             <Container className='background-style' fluid>
                 <Row>
                     <Col><h2>Students</h2></Col>
-                    <button>Add a new student</button>
+                    <Col><Link to={"/lessons/new"} style={{textDecoration: 'none'}}><button className="create-new-lesson-button">Add a new student</button></Link></Col>
                     {/* eventually this will be a link to New Student Container that displays form */}
                 </Row>
                 <Row>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import CardList from './CardList'
 import Container from 'react-bootstrap/Container'
 import TimerContainer from './TimerContainer'
@@ -27,6 +28,7 @@ class DisplayContainer extends Component {
             <Container className='dis' fluid>
                 <Row>
                     {/* <Col><h2>Display Page</h2></Col> */}
+                    <Col><Link to={"/lessons"} style={{textDecoration: 'none'}}><button className="create-new-lesson-button">Back to lessons</button></Link></Col>
                     <Modal show={this.state.setShow} animation={false}>
                         <Modal.Body>Ready to Play?</Modal.Body>
                         <Modal.Footer>
