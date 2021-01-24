@@ -1,38 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Timer from '../components/Timer';
 
 const TimerContainer = () => {
     
-    const[min, setMin] = useState(0)
-    const[sec, setSec] = useState(0)
+    const timeForm = {
+        min: '',
+        sec: ''
+    }
+    const[time, setTime] = useState(timeForm)
     const[start, setStart] = useState(0)
 
-        
-    const handleChange = (e) => {
-        setMin(e.target.value)
-        beg()
+    useEffect(() => {
+        setStart(+(time.min * 60) + +(time.sec))
+    }, [time]);
+
+    const change = (e) => {
+        let obj = {[e.target.name]: e.target.value}
+        setTime(prevState => ({...prevState, ...obj}))
     }
 
-    const changeHandler = (e) => {
-        setSec(e.target.value)
-        beg()
-    }
-
-    const beg = () => {
-        setStart(+(min * 60) + +(sec))
-    }
-
-    //only taking the first number of sec eg. 50 would be 5
-
-
-        return (
-            <>
-                <h2>Time</h2>
-                <input type='number' placeholder='minutes'  onChange={handleChange} required/>
-                <input type='number' placeholder='seconds'  onChange={changeHandler} required/>
-                <Timer start={start}/>
-            </>
-        );
+    return (
+        <>
+            <h2>Time</h2>
+            <input type='number' placeholder='minutes' name='min' onChange={change} required/>
+            <input type='number' placeholder='seconds' name='sec' onChange={change} required/>
+            <Timer start={start}/>
+        </>
+    );
 }
 
 export default TimerContainer;
