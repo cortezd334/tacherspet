@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Timer from '../components/Timer';
+import timer from '../images/timer.png';
 
 const TimerContainer = () => {
     
@@ -52,7 +53,7 @@ const TimerContainer = () => {
     return (
         <>
         <div className='iGroup'>
-            <h2 id='boxTitle'>Time</h2>
+            <h2 id='boxTitle'><img id='timer' src={timer}/>       Time</h2>
             <input className='input' type='number' placeholder='minutes' name='min' onChange={change} required/>
             <input className='input' type='number' placeholder='seconds' name='sec' onChange={change} required/>
             {play ?
@@ -73,3 +74,4 @@ const TimerContainer = () => {
 export default TimerContainer;
 
 //need a catch - after === 0 button goes back to start && Timer disappears (display(false))
+//after pause/restart, bar going all the way down then starting at mid again
