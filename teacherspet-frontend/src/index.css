@@ -38,6 +38,11 @@ code {
   border: 0px;
 }
 
+
+.card-submit:hover {
+  background: #adadad;
+}
+
 /* Nav Bar */
 
 .signup {
@@ -176,11 +181,11 @@ code {
 
 .popup {
   z-index: 50;
-  border: 1px solid red;
   height: 100vh;
   position: absolute;
   right: 0;
   width: 100%;
+  background: #D6D6D6;
 }
 
 .grey-box {

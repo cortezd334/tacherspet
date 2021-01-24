@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import { submitCardForm } from '../actions/index'
+import { addLesson } from '../actions/index'
+
 
 class CardForm extends Component {
     constructor(props) {
         super(props)
         this.state = {
             front: "",
-            back: ""
+            back: "",
+            lesson: this.props.lesson
         }
     }
 
@@ -21,9 +24,12 @@ class CardForm extends Component {
     handleSubmit(event) {
         event.preventDefault()
         this.props.submitCardForm(this.state)
+        this.props.addLesson(this.props.lesson)
+
         this.setState({
             front: "",
-            back: ""
+            back: "",
+            lesson: this.props.lesson
         })
     }
     
@@ -40,4 +46,4 @@ class CardForm extends Component {
     }
 }
 
-export default connect(null, { submitCardForm })(CardForm);
+export default connect(null, { submitCardForm, addLesson })(CardForm);

@@ -3,6 +3,11 @@ export default (state = ['Math', 'Science', 'Chemistry', 'History', 'Art'], acti
     switch (action.type) {
         case 'FETCH_LESSONS':
             return state
+        case 'ADD_LESSON':
+            if (state.find(action.payload)) {
+                return [...state]
+            }
+            return [...state, action.payload]
         default:
             return state 
     }
