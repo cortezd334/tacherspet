@@ -18,14 +18,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Switch>
-          <Route exact path = '/' component={Home} />
-          <Route path='/' component={SideNavBar} />
-        </Switch>
+        <Route exact path = '/' component={Home} />
+        <Route exact path={['/lessons/new', '/teacher', '/lessons', '/settings', '/students']} component={SideNavBar} />
         <Switch>
           <Route exact path = '/lessons/new' component={NewLessonContainer} />
           <Route exact path = '/teacher' component={TeacherContainer} />
-          <Route exact path = '/display' component={DisplayContainer} />
+          <Route exact path = '/present' component={DisplayContainer} />
           <Route exact path = '/lessons' component={LessonContainer} />
           <Route exact path = '/settings' component={SettingsContainer} />
           <Route exact path = '/students' component={StudentContainer} />
