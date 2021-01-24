@@ -211,7 +211,6 @@ code {
   margin: 60px auto 30px auto;
 }
 
-<<<<<<< HEAD
 /* progress bar */
 .progress {
   display: inline-block;
@@ -227,7 +226,6 @@ code {
   border-radius: 1rem;
 }
 /* end of progress bar */
-=======
 /* Modal */
 
 .modal-content {
@@ -263,4 +261,3 @@ code {
   border-radius: 100px;
   border: 0px;
 }
->>>>>>> modal-update
