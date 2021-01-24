@@ -1,5 +1,7 @@
 # Teacher's Pet
 
+![Teacher's Pet Homepage](https://i.ibb.co/PMnCLP9/Screen-Shot-2021-01-24-at-6-12-47-PM.png)
+
 ## Description
 
 Going virtual hasn't been easy for teachers and students since the pandemic hit. Although we have become more familiar with classes on Zoom, teachers are having a difficult time customizing their lessons to cater to their students. We created a fully customizable flashcard creation and display too. With this tool, teachers can easily create flashcards and use them for virtual activities to engage with students.
