@@ -8,7 +8,7 @@ export const removeCard = (card) => {
 export const fetchCards = () => {
     return {
         type: "FETCH_CARDS",
-        payload: [{front: "Card Front One", back: "Card Back One"}, {front: "Card Front Two", back: "Card Back Two"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}]
+        payload: [{front: "Card Front One", back: "Card Back One"}, {front: "Card Front Two", back: "Card Back Two"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}, {front: "Card Front One", back: "Card Back One"}]
     }
 }
 
