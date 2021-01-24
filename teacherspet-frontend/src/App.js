@@ -23,10 +23,10 @@ function App() {
         <Switch>
           <Route exact path = '/lessons/new' component={NewLessonContainer} />
           <Route exact path = '/teacher' component={TeacherContainer} />
-          <Route exact path = '/present' component={DisplayContainer} />
           <Route exact path = '/lessons' component={LessonContainer} />
           <Route exact path = '/settings' component={SettingsContainer} />
           <Route exact path = '/students' component={StudentContainer} />
+          <Route path = '/present/:lesson' component={DisplayContainer} />
         </Switch>
       </div>
     </Router>

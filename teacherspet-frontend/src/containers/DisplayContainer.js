@@ -16,6 +16,10 @@ class DisplayContainer extends Component {
         }
     }
     
+    retrieveLesson = () => {
+        return this.props.location.pathname
+    }
+
     handleClose = () => this.setState({setShow: false})
 
     render() {
@@ -36,7 +40,7 @@ class DisplayContainer extends Component {
                     <Col xs={3} className='timer'>
                         <TimerContainer />
                     </Col>
-                    <CardList />
+                    <CardList lesson={this.retrieveLesson()}/>
                 </Row>
             </Container>
         );

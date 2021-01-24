@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
 import Cards from 'react-bootstrap/Card';
-import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom';
+
 
 class LessonSummary extends Component {
-    handleClick = () => {
-
-    }
-    
     render() {
         return (
-            <Cards>
-                <Cards.Body>
-                    <Button className="card-buttons">Present</Button>
-                    <Button className="card-buttons">Edit</Button>
-                </Cards.Body>
+            <div className="lesson-card">
+                <Cards className="lesson-summary-card">
+                    <Cards.Body>
+                    <Link to={`/present/${this.props.lesson}`} style={{textDecoration: 'none'}}><button className="card-buttons">Present</button></Link>
+                        <button className="card-buttons">Edit</button>
+                    </Cards.Body>
+                </Cards>
                 <p>{this.props.lesson}</p>
-            </Cards>
+            </div>
         );
     }
 }
